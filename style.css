@@ -1,0 +1,112 @@
+body{
+ background-color: rgb(36, 36, 36);  
+ max-width: 1400px;
+}
+
+#header{
+ background-color:rgb(36, 36, 36) ;  
+ height: 70px;
+ max-height: 70px;
+ width:100%;
+ max-width: 1280px;
+ display: flex; 
+ overflow: hidden;
+ list-style-type: none;
+ box-shadow: 0px 0px 16px;
+
+}
+
+#header_text{
+ font-family: Arial, sans-serif;   
+ color: white;
+ font-size: 46px;
+ text-align: center;
+ margin-top: 130px;
+ animation-name: shadow_text;
+ animation-iteration-count: infinite;   
+ animation-duration: 10s;
+ animation-direction: alternate-reverse;
+}
+
+#header_text1{
+  font-family: Arial, sans-serif;   
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  animation-name: shadow_text;
+  animation-iteration-count: infinite;   
+  animation-duration: 10s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes shadow_text{
+ 0%{text-shadow: 0px 0px 40px rgb(0, 136, 255);color:rgb(0, 136, 255);}
+ 100%{text-shadow: 0px 0px 40px rgb(132, 0, 255);color:rgb(132, 0, 255);}
+}
+
+header ul li{
+ float: left; 
+ padding-left: 10px; 
+ padding-right: 10px; 
+}
+
+header ul li input{
+  display: block; 
+  margin-top: 25px;  
+}
+
+header ul li:hover{
+ background-color: blueviolet;
+}
+
+
+#animation_header{ 
+ width: 100%;   
+ height: 350px;
+ background-color: rgb(10, 10, 10);
+ animation-name: tra;
+ animation-iteration-count: infinite;   
+ animation-duration: 10s;
+ animation-direction: alternate-reverse;
+ border: 2px solid rgb(10, 10, 10);
+ border-radius: 30px;
+}
+
+@keyframes tra{
+ 0%{background-color: rgb(0, 22, 41);box-shadow: 0px 0px 40px rgb(0, 136, 255);}
+ 100%{background-color: rgb(24, 0, 46);box-shadow: 0px 0px 40px rgb(132, 0, 255);}
+}
+
+#section1{
+  display: flex;
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+}
+
+.block{
+ background-color: white; 
+ height: 350px;
+ width: 300px;
+ margin-left: 100px;
+ animation-name: tra;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate-reverse;
+ border: 5px;
+ border-radius: 30px;
+}
+
+div:hover{
+  animation-name: tra_hover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes tra_hover{
+  0%{background-color: rgb(0, 136, 255);}
+  100%{background-color: rgb(132, 0, 255)}
+ }
+
+
